@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Booking</title>
+	<link rel="stylesheet" type="text/css" href="Booking.css">
+    <link rel="icon" href="">
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        function showPopup(event){
+            event.preventDefault();
+
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var date = document.getElementById('date').value;
+            var time = document.getElementById('time').value;
+            var selectedItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
+
+
+            console.log('Selected items:', selectedItems);
+            console.log("Form data:", name, email, phone, date, time, selectedItems);
+
+
+            /*
+            var message = "Thank You, "+name+ "! your appoinment is fixed for "+date+ " at "+time+ ".";
+            alert(message);
+
+            setTimeout(function(){
+            window.location.href = "startpage.html";
+        },1000);
+            */
+
+        /*var selectedItems = JSON.parse(localStorage.getItem('selectedItems')) || []; */
+
+        var bookingData ={
+            name: name,
+            email: email,
+            phone: phone,
+            date: date,
+            time: time,
+            selectedItems: selectedItems.join(', ')
+        };
+
+        console.log("Form data with selected items:", bookingData);
+
+
+        fetch('http://localhost:3000/book-appointment', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+
+            body: JSON.stringify(bookingData)
+        })
+        .then(response => {
+            console.log('Response received:', response);
+
+            if(!response.ok){
+                throw new Error('Network response was not ok');
+            }
+
+            console.log('Response type:', response.headers.get('content-type'));
+            return response.json();
+        })
+        .then(data =>{
+            console.log('Data from server:', data);
+            var message = "Thank You, "+name+ "! your appoinment is fixed for "+date+ " at "+time+ ".";
+            /*if(selectedItems.length>0 ? selectedItems.join(', '):""){
+                message+= "you have selected:" +selectedItems.join(',')+".";
+            }*/
+            alert(message);
+
+            setTimeout(function(){
+            window.location.href = "startpage.html";
+        },1000);
+        })
+        .catch(error =>{
+            console.error('Error:',error);
+            alert('Error occurred, please try again.');
+        });
+
+        }
+
+        document.getElementById('booking-form').addEventListener('submit', showPopup);
+
+    });
+    </script>
+
+
+	
+</head>
+<body>
+
+<nav class="navbar">
+      <a href="startpage.html" style=" border-radius: 3px; margin: 10px;">Home</a>
+      <!--<a href="#offer.html" style="border-radius : 3px ;  margin: 10px;">Offer</a>-->
+      <!--<a href="booking.html" style="border-radius: 3px ; margin: 10px;">Booking</a>-->
+      <a href="services.html"style="border-radius:3px ; margin: 10px;">services</a>
+      <a href="rates.html" style="border-radius: 3px ; margin: 10px;">Booking</a>
+      <a href="contact.html" style="border-radius:3px ; margin: 10px;">About Us</a>
+     </nav>
+
+
+
+
+<div class="row">
+    <div class="image-container">
+	        <img src="https://i.pinimg.com/736x/16/ba/04/16ba04e887c903f6adfa97df8dbf1718.jpg" alt="Makeup-image" height="630px" width="460px">
+        </div>
+    
+            <div class="login-container">
+            <form id="booking-form" class="login-form" >
+                <h2>Confirm Your Appointment By completing Regestration...</h2>
+        
+
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" autocomplete="email" id="email" name="email" placeholder="Enter Your Email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Your Mobile No" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="input-group2">
+                    <input type="submit" value="Book Appoinment">
+                </div>
+            </div>
+            </form>
+
+
+        
+        
+        
+        <div class="image-container">
+          <img src="https://content.jdmagicbox.com/comp/jabalpur/b4/9999px761.x761.221105134057.l3b4/catalogue/nandini-look-beauty-parlour-madan-mahal-jabalpur-beauty-parlours-r3a33lpra4.jpg"  alt="makeup-image" align="right" height="630px" width="460px" >
+
+        </div>
+    </div>
+
+    <!--
+    <script>
+        // Ensure that the form submits via JavaScript
+        document.getElementById('booking-form').addEventListener('submit', showPopup);
+    </script>
+-->
+</body>
+</html>

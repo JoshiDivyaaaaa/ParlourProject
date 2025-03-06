@@ -1,0 +1,215 @@
+body{
+	background: linear-gradient(to right,purple,mediumpurple,deeppink);
+}
+
+h1{
+	padding-top: -5 px;
+}
+.navbar{
+  border: 3px solid darkred;
+  text-align: right;
+  font-size: 25px;
+  border: 2px;
+  flex-direction: revert-layer ;
+  margin: 25px;
+  font-family: sans-serif;
+  color: darkred;
+}
+
+.navbar a:hover{
+  color: rebeccapurple;
+    background-color: transparent;
+    text-decoration: underline;
+  /*background-color : lightskyblue;*/
+
+}
+.navbar a:link{
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.navbar a:visited{
+  color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.navbar a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    /*background-color: black;*/
+    margin: 50px auto;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section {
+    width: 45%;
+}
+
+.skills-section h2 {
+    font-size: 34px;
+    color: #0ef;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.skills-section ul li {
+    /*background: black;*/
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 1px;
+    border-radius: 5px;
+    font-size:20px;
+    /*font color: whitesmoke;*/
+}
+.skills-section li{
+
+	color: blanchedalmond;
+}
+
+   
+
+
+
+.form-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 1px;
+            max-width: 400px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 5px;
+        }
+        label {
+            margin-left: 8px;
+            margin-bottom: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+
+ .linking{
+  text-decoration: none;
+  color: wheat;
+
+}
+
+a{
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Navbar adjustments */
+  .navbar {
+    font-size: 18px; /* Decrease font size of navbar links */
+    text-align: center; /* Center navbar items */
+    margin: 10px 0; /* Adjust margins for smaller screens */
+  }
+
+  /* Navbar links adjustments */
+  .navbar a {
+    display: block; /* Stack navbar links vertically */
+    margin: 10px 0; /* Add space between links */
+    font-size: 18px; /* Adjust link font size */
+  }
+
+  /* Container adjustments */
+  .container2 {
+    flex-direction: column; /* Stack the sections vertically */
+    justify-content: center;
+    padding: 10px;
+    width: 100%; /* Ensure container takes full width */
+    margin: 20px 0;
+  }
+
+  /* Skills Section adjustments */
+  .skills-section {
+    width: 100%; /* Ensure skills section takes full width */
+    margin-bottom: 20px; /* Add space between sections */
+  }
+
+  .skills-section h2 {
+    font-size: 28px; /* Adjust the title size */
+    text-align: center; /* Center the skills section title */
+  }
+
+  /* Skills list adjustments */
+  .skills-section ul li {
+    font-size: 18px; /* Reduce font size for list items */
+    padding: 5px;
+  }
+
+  /* Form container adjustments */
+  .form-container {
+    max-width: 90%; /* Make the form container more responsive */
+    margin: 10px auto; /* Center the form container */
+    padding: 20px;
+  }
+
+  /* Button size adjustments */
+  button {
+    width: 100%; /* Make button take full width on mobile */
+    padding: 12px; /* Increase padding for easier clicking */
+    font-size: 18px; /* Adjust button font size */
+  }
+
+  /* Adjust linking class */
+  .linking {
+    font-size: 16px; /* Reduce the font size for links */
+  }
+
+  /* Adjust general link font size */
+  a {
+    font-size: 16px; /* Decrease font size for links on small screens */
+    text-align: center;
+  }
+
+  /* Adjust heading size */
+  h1 {
+    font-size: 28px; /* Reduce h1 size for smaller screens */
+    padding-top: 10px;
+  }
+
+  h3 {
+    font-size: 22px; /* Adjust h3 size */
+  }
+}

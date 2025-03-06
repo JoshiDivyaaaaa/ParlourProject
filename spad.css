@@ -1,0 +1,70 @@
+body{
+	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+}
+.spas{
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+}
+h1{
+	text-align: center;
+}
+.spatext{
+	font-size: 30px;
+	font-family: sans-serif;
+}
+h3{
+	text-align: center;
+	font-family: cursive;
+	text-color: black;
+}
+a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+a:link{
+	color: green;
+	text-decoration: none;
+}
+a:visited{
+	color: blanchedalmond;
+	text-decoration: none;
+}
+a:active{
+	color: palegreen;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .spas {
+        grid-template-columns: 1fr; /* Stacks the grid items into a single column */
+        column-gap: 10px; /* Adds space between grid items */
+    }
+
+    .spatext {
+        font-size: 24px; /* Adjusts font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjusts font size for h3 on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .spatext {
+        font-size: 18px; /* Further reduces the font size for mobile screens */
+    }
+
+    h3 {
+        font-size: 16px; /* Reduces the font size of h3 for mobile */
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        font-size: 14px; /* Reduces link font size for mobile devices */
+    }
+
+    body {
+        background: linear-gradient(to bottom, lightpink, deeppink); /* Adjust gradient direction for smaller screens */
+    }
+}

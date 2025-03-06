@@ -1,0 +1,70 @@
+body{
+	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+}
+.bleachs{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	column-gap: 0px;
+}
+h1{
+	text-align: center;
+}
+.bleachtext{
+	font-size: 30px;
+	font-family: sans-serif;
+}
+h3{
+	text-align: center;
+	font-family: cursive;
+	text-color: black;
+}
+a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+a:link{
+	color: green;
+	text-decoration: none;
+}
+a:visited{
+	color: blanchedalmond;
+	text-decoration: none;
+}
+a:active{
+	color: palegreen;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .bleachs {
+        grid-template-columns: 1fr; /* Stacks the grid items into a single column on smaller screens */
+        column-gap: 10px; /* Adds spacing between items in the grid */
+    }
+
+    .bleachtext {
+        font-size: 24px; /* Reduces the font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjusts the font size of h3 on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .bleachtext {
+        font-size: 18px; /* Further reduces font size for mobile devices */
+    }
+
+    h3 {
+        font-size: 16px; /* Reduces font size for h3 on mobile */
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        font-size: 14px; /* Makes link text smaller on mobile devices */
+    }
+
+    body {
+        background: linear-gradient(to bottom, lightpink, deeppink); /* Adjust gradient direction for smaller screens */
+    }
+}

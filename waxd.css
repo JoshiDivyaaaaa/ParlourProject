@@ -1,0 +1,71 @@
+body{
+	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+}
+.waxs{
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+}
+.waxtext{
+	font-size: 30px;
+	font-family: sans-serif;
+}
+h1{
+	text-align: center;
+}
+h3{
+	text-align: center;
+	font-family: cursive;
+	text-color: black;
+}
+a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+a:link{
+	color: green;
+	text-decoration: none;
+}
+a:visited{
+	color: blanchedalmond;
+	text-decoration: none;
+}
+a:active{
+	color: palegreen;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .waxs {
+        grid-template-columns: 1fr; /* Stacks the columns into a single column on smaller screens */
+        column-gap: 10px; /* Adds a little space between the columns */
+		padding-left: 30px;
+    }
+
+    .waxtext {
+        font-size: 24px; /* Reduces the font size for better readability on smaller screens */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjusts the font size of the h3 element */
+    }
+}
+
+@media (max-width: 480px) {
+    .waxtext {
+        font-size: 18px; /* Further reduces font size for smaller mobile screens */
+    }
+    
+    h3 {
+        font-size: 16px; /* Reduces the font size of h3 for mobile screens */
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        font-size: 14px; /* Makes the link text slightly smaller */
+    }
+
+    body {
+        background: linear-gradient(to bottom, lightpink, deeppink); /* Changes gradient direction for better fit on smaller screens */
+    }
+}

@@ -1,0 +1,159 @@
+body{
+	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+}
+/*
+.sideimg{
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+}
+h1{
+	text-align: center;
+}
+.dulhantext{
+	font-size: 30px;
+	font-family: sans-serif;
+}
+h3{
+	text-align: center;
+	font-family: cursive;
+	text color: black;
+}
+a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+a:link{
+	color: green;
+	text-decoration: none;
+}
+a:visited{
+	color: blanchedalmond;
+	text-decoration: none;
+}
+a:active{
+	color: palegreen;
+	text-decoration: underline;
+}
+
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid *
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns *
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) *
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text *
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image *
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+*/
+
+.mani{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	column-gap: 0px;
+}
+h1{
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+	font-family: cursive;
+	text-color: black;
+}
+
+.manitext{
+	font-family: sans-serif;
+	font-size: 30px;
+}
+a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+a:link{
+	color: green;
+	text-decoration: none;
+}
+a:visited{
+	color: blanchedalmond;
+	text-decoration: none;
+}
+a:active{
+	color: palegreen;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .mani {
+        grid-template-columns: 1fr; /* Stacks the grid items into a single column */
+        column-gap: 10px; /* Adds some space between grid items */
+    }
+
+    .manitext {
+        font-size: 24px; /* Adjusts the font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 20px; /* Reduces the font size of h3 on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .manitext {
+        font-size: 18px; /* Further reduces the font size for mobile screens */
+    }
+
+    h3 {
+        font-size: 16px; /* Adjusts the font size of h3 for mobile */
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        font-size: 14px; /* Makes the link text smaller for mobile devices */
+    }
+
+    body {
+        background: linear-gradient(to bottom, lightpink, deeppink); /* Changes gradient direction for mobile screens */
+    }
+}

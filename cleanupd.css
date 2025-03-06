@@ -1,0 +1,72 @@
+body{
+	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+}
+.cleanimg{
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+}
+.cleantext{
+	font-size: 30px;
+	font-family: sans-serif;
+}
+h1{
+	text-align: center;
+}
+h3{
+	text-align: center;
+	font-family: cursive;
+	color: whitesmoke;
+}
+a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+a:link{
+	color: green;
+	text-decoration: none;
+}
+a:visited{
+	color: blanchedalmond;
+	text-decoration: none;
+}
+a:active{
+	color: palegreen;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .cleanimg {
+        grid-template-columns: 1fr; /* Stacks the grid items into a single column */
+        column-gap: 10px; /* Adds space between grid items */
+    }
+
+    .cleantext {
+        font-size: 24px; /* Reduces the font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjusts the font size of h3 for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cleantext {
+        font-size: 18px; /* Further reduces the font size for mobile screens */
+    }
+
+    h3 {
+        font-size: 16px; /* Adjusts the font size of h3 for mobile */
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        font-size: 14px; /* Makes the link text smaller for mobile devices */
+    }
+
+    body {
+        background: linear-gradient(to bottom, lightpink, deeppink); /* Adjusts gradient direction for mobile screens */
+    }
+}
+
+

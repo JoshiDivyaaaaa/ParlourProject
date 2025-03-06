@@ -1,0 +1,135 @@
+body{
+	background: linear-gradient(to right,black,rebeccapurple,deeppink);
+
+}
+
+
+
+
+.navbar{
+  border: 3px solid darkred;
+  text-align: right;
+  font-size: 25px;
+  border: 2px;
+  flex-direction: revert-layer ;
+  margin: 25px;
+  font-family: sans-serif;
+  color: darkred;
+}
+
+.navbar a:hover{
+  color: rebeccapurple;
+    background-color: transparent;
+    text-decoration: underline;
+  /*background-color : lightskyblue;*/
+
+}
+.navbar a:link{
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.navbar a:visited{
+  color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.navbar a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+h1{
+	 font-family: sans-serif;
+	 color: whitesmoke;
+	 text-align: center;
+	 text-decoration: underline;
+}
+/*
+.column {
+  float: left;
+  width: 33.33%;
+  /*padding: 5px;*
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  padding-right: 5px;
+  margin: 5px;
+
+}
+
+/* Clear floats after image containers ***
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  border: 3px solid whitesmoke;
+}
+*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1 1 30%;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 10px;
+  padding-left: 50px;
+  border:  1px solid whitesmoke;
+  
+  /*padding: 5px;*/
+}
+h3{
+	 color: whitesmoke;
+   text-align: center;
+}
+a{
+  color: whitesmoke;
+  text-align: center;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 1 1 100%; /* Each column will take full width */
+    margin: 10px 0; /* Adds vertical margin between items */
+    /*justify-content: center;
+    align-items: center;*/
+    text-align: center;
+    border: none;
+    
+
+  }
+
+  .row {
+    flex-direction: column; /* Stacks columns vertically */
+  }
+
+  h1 {
+    font-size: 30px; /* Adjust heading size for smaller screens */
+  }
+
+  .navbar {
+    font-size: 18px; /* Adjust navbar font size */
+  }
+
+  img{
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+}

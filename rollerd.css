@@ -1,0 +1,70 @@
+body{
+	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+}
+.rollers{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	column-gap: 0px;
+}
+h1{
+	text-align: center;
+}
+.rollertext{
+	font-size: 30px;
+	font-family: sans-serif;
+}
+h3{
+	text-align: center;
+	font-family: cursive;
+	color: black;
+}
+a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+a:link{
+	color: green;
+	text-decoration: none;
+}
+a:visited{
+	color: blanchedalmond;
+	text-decoration: none;
+}
+a:active{
+	color: palegreen;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .rollers {
+        grid-template-columns: 1fr; /* Stacks the columns in a single column */
+        column-gap: 10px; /* Adds spacing between the elements */
+    }
+    
+    .rollertext {
+        font-size: 24px; /* Adjusts the font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjusts the font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .rollertext {
+        font-size: 18px; /* Further reduces font size on very small screens */
+    }
+    
+    h3 {
+        font-size: 16px; /* Adjusts h3 text size on smaller screens */
+    }
+    
+    a:link, a:visited, a:hover, a:active {
+        font-size: 14px; /* Makes the links slightly smaller */
+    }
+    
+    body {
+        background: linear-gradient(to bottom, lightpink, deeppink); /* Adjust gradient direction for mobile view */
+    }
+}

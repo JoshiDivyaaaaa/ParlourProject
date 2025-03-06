@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>rates</title>
+	<link rel="stylesheet" type="text/css" href="rates.css">
+</head>
+<body>
+
+
+
+<nav class="navbar">
+      <a href="startpage.html" style=" border-radius: 3px; margin: 10px;">Home</a>
+      <!--<a href="#offer.html" style="border-radius : 3px ;  margin: 10px;">Offer</a>-->
+      <!--<a href="booking.html" style="border-radius: 3px ; margin: 10px;">Booking</a>--> 
+      <a href="services.html"style="border-radius:3px ; margin: 10px;">services</a>
+      <a href="rates.html" style="border-radius: 3px ; margin: 10px;">Booking</a>
+      <a href="contact.html" style="border-radius:3px ; margin: 10px;">About Us</a>
+     </nav>
+
+		<h1>From Here You Can Book Your Appointment</h1>
+		<div class="container2">
+
+    	
+        	<div class="skills-section">
+            <h2>Services That we Provides Inside our Parlour.</h2>
+            <ul>
+            	<form id="checkboxForm">
+        		<div>
+            		<li><input type="checkbox" id="item1" name="items" value="Threading">
+            		<label for="item1">Threading</label></li>
+        		</div>
+        		<div>
+            		<li><input type="checkbox" id="item2" name="items" value="Hair cut">
+            		<label for="item2">Hair Cut</label></li>
+        		</div>
+        		<div>
+            		<li><input type="checkbox" id="item3" name="items" value="Manicure And Pedicure">
+            		<label for="item3">Manicure And Pedicure</label></li>
+        		</div>
+        		<div>
+            		<li><input type="checkbox" id="item1" name="items" value="Wax">
+            		<label for="item1">Wax</label></li>
+        		</div>
+        		<div>
+            		<li><input type="checkbox" id="item1" name="items" value="hair Spa">
+            		<label for="item1">Hair spa</label></li>
+        		</div>
+        		<div>
+            		<li><input type="checkbox" id="item1" name="items" value="Clean Up">
+            		<label for="item1">Clean Up</label></li>
+        		</div>
+        		<div>
+            		<li><input type="checkbox" id="item1" name="items" value="bleach">
+            		<label for="item1">Bleach</label></li>
+        		</div>
+        	<button type="submit">Submit</button>
+    </form>
+</ul>
+</div>
+        	<div class="skills-section">
+            <h2>Services That can be provided At Your Venue.</h2>
+            <h4>Only few Services will provided at your Venue</h4>
+            <ul>
+
+            	<form id="checkboxForm">
+        		<div>
+            		<li><!--<input type="text" id="item1" name="items" value="Item 1">
+            		<label for="item1">Dulhan Makeup</label>--> Dulhan Makeup</li>
+        		</div>
+        		<div>
+            		<li><!--<input type="checkbox" id="item2" name="items" value="Item 2">
+            		<label for="item2">Dulhan Mehandi</label>-->Dulhan Mehandi</li>
+        		</div>
+        		<div>
+            		<li><!--<input type="checkbox" id="item3" name="items" value="Item 3">
+            		<label for="item3">Haldi Makeup</label>-->Haldi Makeup</li>
+        		</div>
+        		<div>
+            		<li><!--<input type="checkbox" id="item1" name="items" value="Item 1">
+            		<label for="item1">Mehandi Makeup</label>-->Enagagement Makeup</li>
+        		</div>
+        		<div>
+            		<li><!--<input type="checkbox" id="item1" name="items" value="Item 1">
+            		<label for="item1">Any Traditional Makeup</label>-->Sider Makeup</li>
+        		</div>
+        		<div>
+            		<li><!--<input type="checkbox" id="item1" name="items" value="Item 1">
+            		<label for="item1">Enagagement Makeup-->Any Traditional Makeup</label></li>
+        		</div>
+        	<!--<button type="submit">Submit</button>-->
+            <h3>For This Serices you have to contact us directly..</h3>
+            <h4><a href="tel:7499754752">7499754752</a></h4>
+
+    	</form>
+    </ul>
+    </div>
+  	</div>
+		<h2>You Can Pay After Taking Services</h2>
+		<h3>For More Information You Can call:<a href="tel:7499754752" class="linking"><i class='bx bxs-phone'></i>7499754752</a></h3>
+
+    <script>
+        document.getElementById('checkboxForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const checkboxes = document.querySelectorAll('input[name="items"]:checked');
+            let selectedItems = [];
+
+            checkboxes.forEach((checkbox) => {
+                selectedItems.push(checkbox.value);
+            });
+            alert('You Have selected: ' + selectedItems.join(', '));
+
+            setTimeout(function(){
+                window.location.href ="booking.html";
+            }, 100);
+        });
+    </script>
+</body>
+</html>

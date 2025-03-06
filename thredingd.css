@@ -1,0 +1,70 @@
+body{
+	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+}
+.nailsimg{
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+}
+h1{
+	text-align: center;
+}
+.nailtext{
+	font-size: 30px;
+	font-family: sans-serif;
+}
+h3{
+	text-align: center;
+	font-family: cursive;
+	text-color: black;
+}
+a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+a:link{
+	color: green;
+	text-decoration: none;
+}
+a:visited{
+	color: blanchedalmond;
+	text-decoration: none;
+}
+a:active{
+	color: palegreen;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nailsimg {
+        grid-template-columns: 1fr; /* Stacks the images in a single column for smaller screens */
+        column-gap: 10px; /* Adds some space between columns */
+    }
+
+    .nailtext {
+        font-size: 24px; /* Reduces the font size for better readability on smaller screens */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjusts font size for h3 on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .nailtext {
+        font-size: 18px; /* Further reduces the font size on very small screens */
+    }
+    
+    h3 {
+        font-size: 16px; /* Reduces the font size of h3 for very small screens */
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        font-size: 14px; /* Makes the link text slightly smaller for mobile screens */
+    }
+
+    body {
+        background: linear-gradient(to bottom, lightpink, deeppink); /* Adjust gradient direction for mobile screens */
+    }
+}

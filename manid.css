@@ -1,0 +1,70 @@
+body{
+	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+}
+.mani{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	column-gap: 0px;
+}
+h1{
+	text-align: center;
+}
+h3{
+	text-align: center;
+	font-family: cursive;
+	text-color: black;
+}
+.manitext{
+	font-family: sans-serif;
+	font-size: 30px;
+}
+a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+a:link{
+	color: green;
+	text-decoration: none;
+}
+a:visited{
+	color: blanchedalmond;
+	text-decoration: none;
+}
+a:active{
+	color: palegreen;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .mani {
+        grid-template-columns: 1fr; /* Stacks the grid items into a single column */
+        column-gap: 10px; /* Adds some space between grid items */
+    }
+
+    .manitext {
+        font-size: 24px; /* Adjusts the font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 20px; /* Reduces the font size of h3 on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .manitext {
+        font-size: 18px; /* Further reduces the font size for mobile screens */
+    }
+
+    h3 {
+        font-size: 16px; /* Adjusts the font size of h3 for mobile */
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        font-size: 14px; /* Makes the link text smaller for mobile devices */
+    }
+
+    body {
+        background: linear-gradient(to bottom, lightpink, deeppink); /* Changes gradient direction for mobile screens */
+    }
+}
