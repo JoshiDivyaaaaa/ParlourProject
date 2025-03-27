@@ -13,12 +13,13 @@
  
 
         <nav class="navbar">
-      <a href="index.html" style=" border-radius: 3px; margin: 10px;">Home</a>
-      <!--<a href="#offer.html" style="border-radius : 3px ;  margin: 10px;">Offer</a>-->
-      <!--<a href="booking.html" style="border-radius: 3px ; margin: 10px;">Booking</a>-->
-      <a href="services.html"style="border-radius:3px ; margin: 10px;">services</a>
-      <a href="rates.html" style="border-radius: 3px ; margin: 10px;">Booking</a>
-      <a href="contact.html" style="border-radius:3px ; margin: 10px;">About Us</a>
+          <span class="menu-icon" onclick="toggleMenu()">☰</span>
+          <div class="nav-links">
+              <a href="index.html" style=" border-radius: 3px; margin: 10px;">Home</a>
+              <a href="services.html"style="border-radius:3px ; margin: 10px;">services</a>
+              <a href="rates.html" style="border-radius: 3px ; margin: 10px;">Booking</a>
+              <a href="contact.html" style="border-radius:3px ; margin: 10px;">About Us</a>
+            </div>
      </nav>
 
 
@@ -27,25 +28,7 @@
 
 
 
-      <!--
-        <div class="row">
-            <div class="column">
-               <a href="Bleach.html" > <img src="https://images.herzindagi.info/image/2022/Apr/gold-facial-cost-procedure-how-to-do.jpg" alt="Snow" height="200px" width="400px"></a>
-               <!-- <a href="Bleach.html" >bleach</a>
-                <h3>Bleach</h3>--
-             </div>
-            <div class="column">
-                <a href="threding.html" ><img src="https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGhyZWFkaW5nfGVufDB8fDB8fHww&w=1000&q=80"alt="Forest" height="200px" width="400px"></a>
-                <!--<a href="threding.html" >threding</a>
-                <h3>Threading</h3>--
-             </div>
-           <div class="column">
-               <a href="roller.html" ><img src="https://st2.depositphotos.com/1177973/5404/i/450/depositphotos_54041601-stock-photo-beautiful-girl-in-hair-curlers.jpg" alt="Mountains" height="200px" width="400px"></a>
-               <!--<a href="roller.html" >roller setting</a>
-               <h3>Roller Setting</h3>--
-           </div>
-         </div>
-        -->
+    
         
 
 
@@ -107,5 +90,10 @@
          </div>
 		
 		
+         <script>
+          function toggleMenu() {
+              document.querySelector('.nav-links').classList.toggle('active');
+          }
+      </script>
 </body>
 </html>

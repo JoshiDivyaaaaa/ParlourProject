@@ -1,5 +1,6 @@
 body{
 	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+    overflow-x: hidden;
 }
 .nailsimg{
 	display: grid;
@@ -40,10 +41,15 @@ a:active{
     .nailsimg {
         grid-template-columns: 1fr; /* Stacks the images in a single column for smaller screens */
         column-gap: 10px; /* Adds some space between columns */
+        align-items: center;
+        justify-content: center;
     }
 
     .nailtext {
         font-size: 24px; /* Reduces the font size for better readability on smaller screens */
+    }
+    .nailsimgside{
+        align-items: center;
     }
 
     h3 {

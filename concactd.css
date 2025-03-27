@@ -1,5 +1,6 @@
 body{
-	background: linear-gradient(to right,purple,rebeccapurple,deeppink);
+	background: linear-gradient(to right,rgb(196, 53, 196),rgb(132, 51, 213),deeppink);
+  overflow-x: hidden;
 }
 h1{
 	text-align: center;
@@ -120,7 +121,47 @@ html {
   background-color: #555;
 }
 
+
+
+.menu-icon {
+	display: none;
+	font-size: 30px;
+	cursor: pointer;
+	color: rgb(20, 14, 14);
+	padding: 10px;
+}
+
 @media screen and (max-width: 650px) {
+
+  .nav-links{
+		/*display: none;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;*/
+		flex-direction: column;
+        align-items: center;
+        width: 100%;
+     	text-align: center;
+        overflow: hidden;
+        max-height: 0;  /* Hides menu initially */
+        transition: max-height 0.5s ease-in-out;
+  
+	}
+	.menu-icon {
+		display: block;
+		/*text-align: right;
+		margin-right: 20px;*/
+	}
+  
+	.nav-links {
+		display: block;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+	.nav-links.active {
+		max-height: 300px; /* Expands menu */
+	}
   .column {
     width: 100%;
     display: block;
@@ -148,7 +189,7 @@ html {
 .contact-list i{
   font-color: whitesmoke;
   display: inline-block;
-  color: #0ef;
+  color: rgb(6, 7, 7);
   font-size: 20px;
   font-weight: 600;
   transition: all.40s ease;
@@ -161,7 +202,7 @@ html {
 }
 .contact-list li a:hover{
   transform: scale(1.01) translateY(-5px);
-  color: #0ef;
+  color: rgb(7, 8, 8);
 
 }
 .contact-icon i{
@@ -171,10 +212,10 @@ html {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #0ef;
+  border: 2px solid rgb(17, 22, 22);
   border-radius: 50%;
   font-size: 20px;
-  color: #0ef;
+  color: rgb(6, 7, 7);
   text-decoration: none;
   margin: 30px 15px 30px 0;
   transition: .5s ease;
@@ -183,9 +224,9 @@ html {
   animation-delay: calc(.2s*var(--1));  
 }
 .contact-icon i:hover{
-  background: #0ef;
+  background: rgb(183, 85, 179);
   color: black;
-  box-shadow: 0 0 20px #0ef;
+  box-shadow: 0 0 20px rgb(197, 74, 158);
 }
 
 @keyframes slideLeft{

@@ -1,5 +1,6 @@
 body{
 	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+    overflow-x: hidden;
 }
 .Nails{
 	display: grid;

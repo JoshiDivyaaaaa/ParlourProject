@@ -2,9 +2,13 @@
 body{
 	background-repeat: no-repeat;
 	background-size: cover;
-
+	overflow-x: hidden;
 }
 
+body-content h1{
+	font-size: 50px;
+
+}
 .navbar{
 	border: 3px solid darkred;
 	text-align: right;
@@ -14,6 +18,7 @@ body{
 	margin: 50px;
 	font-family: sans-serif;
 	color: darkred;
+	flex-wrap: wrap;
 }
 
 a:hover{
@@ -73,6 +78,15 @@ a:link{
 	color: whitesmokess;
 }
 
+.menu-icon {
+	display: none;
+	font-size: 30px;
+	cursor: pointer;
+	color: rgb(20, 14, 14);
+	padding: 10px;
+}
+
+
 @media screen and (max-width: 600px) {
 	body {
 	  background-size: cover; /* Keeps the background in mobile */
@@ -81,12 +95,40 @@ a:link{
 	.navbar {
 	  font-size: 18px; /* Make the navbar font smaller */
 	  margin: 20px; /* Less margin */
-	  text-align: left; /* Align text to left for better readability on smaller screens */
+	  
+	}
+	.nav-links{
+		/*display: none;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;*/
+		flex-direction: column;
+        align-items: center;
+        width: 100%;
+     	text-align: center;
+        overflow: hidden;
+        max-height: 0;  /* Hides menu initially */
+        transition: max-height 0.5s ease-in-out;
+  
+	}
+	.menu-icon {
+		display: block;
+		/*text-align: right;
+		margin-right: 20px;*/
 	}
   
+	.nav-links {
+		display: block;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+	.nav-links.active {
+		max-height: 300px; /* Expands menu */
+	}
 	h1 {
-	  font-size: 30px; /* Smaller heading */
-	  margin: 30px;
+	  	font-size: 30px; /* Smaller heading */
+	  	margin: 30px;
 	}
   
 	p {
@@ -108,6 +150,7 @@ a:link{
 	a {
 	  font-size: 16px; /* Smaller font size for links */
 	  margin-right: 15px;
+	  width: 33.33;
 	}
   }
   

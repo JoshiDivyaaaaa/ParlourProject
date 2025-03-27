@@ -1,5 +1,5 @@
 body{
-	background: linear-gradient(to right,black,rebeccapurple,deeppink);
+	background: linear-gradient(to right,rgb(116, 44, 85),rgb(136, 63, 208),deeppink);
 
 }
 
@@ -100,6 +100,13 @@ a{
 
 }
 
+.menu-icon {
+	display: none;
+	font-size: 30px;
+	cursor: pointer;
+	color: rgb(20, 14, 14);
+	padding: 10px;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -132,4 +139,34 @@ a{
     margin: 0 auto;
     display: block;
   }
+
+  .nav-links{
+		/*display: none;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;*/
+		flex-direction: row;
+    align-items: center;
+        width: 100%;
+     	text-align: center;
+        overflow: hidden;
+        max-height: 0;  /* Hides menu initially */
+        transition: max-height 0.5s ease-in-out;
+  
+	}
+	.menu-icon {
+		display: block;
+		/*text-align: right;
+		margin-right: 20px;*/
+	}
+  
+	.nav-links {
+		display: block;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+	.nav-links.active {
+		max-height: 300px; /* Expands menu */
+	}
 }

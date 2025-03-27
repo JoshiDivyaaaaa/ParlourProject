@@ -1,5 +1,6 @@
 body{
-	background: linear-gradient(to right,purple,mediumpurple,deeppink);
+	background: linear-gradient(to right,rgb(180, 42, 180),rgb(115, 77, 193),rgb(219, 62, 146));
+  overflow-x: hidden;
 }
 
 h1{
@@ -61,8 +62,8 @@ h1{
 }
 
 .skills-section h2 {
-    font-size: 34px;
-    color: #0ef;
+    font-size: 30px;
+    color: rgb(9, 11, 11);
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -136,6 +137,16 @@ a{
 
 }
 
+
+.menu-icon {
+	display: none;
+	font-size: 30px;
+	cursor: pointer;
+	color: rgb(20, 14, 14);
+	padding: 10px;
+  
+}
+
 @media screen and (max-width: 768px) {
 
   /* Navbar adjustments */
@@ -147,10 +158,40 @@ a{
 
   /* Navbar links adjustments */
   .navbar a {
-    display: block; /* Stack navbar links vertically */
+     /* Stack navbar links vertically */
     margin: 10px 0; /* Add space between links */
     font-size: 18px; /* Adjust link font size */
   }
+
+  .nav-links{
+		/*display: none;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;*/
+		flex-direction: column;
+        align-items: center;
+        width: 100%;
+     	text-align: center;
+        overflow: hidden;
+        max-height: 0;  /* Hides menu initially */
+        transition: max-height 0.5s ease-in-out;
+  
+	}
+	.menu-icon {
+		display: block;
+		text-align: right;
+		margin-right: 20px;
+	}
+  
+	.nav-links {
+		display: block;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+	.nav-links.active {
+		max-height: 300px; /* Expands menu */
+	}
 
   /* Container adjustments */
   .container2 {

@@ -1,5 +1,6 @@
 body{
 	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+    overflow-x: hidden;
 }
 .rollers{
 	display: grid;
@@ -40,6 +41,7 @@ a:active{
     .rollers {
         grid-template-columns: 1fr; /* Stacks the columns in a single column */
         column-gap: 10px; /* Adds spacing between the elements */
+        align-items: center;
     }
     
     .rollertext {

@@ -12,14 +12,17 @@
 
 
 <nav class="navbar">
+	<span class="menu-icon" onclick="toggleMenu()">☰</span>
+	<div class="nav-links">
       <a href="index.html" style=" border-radius: 3px; margin: 10px;">Home</a>
       <!--<a href="#offer.html" style="border-radius : 3px ;  margin: 10px;">Offer</a>-->
       <!--<a href="booking.html" style="border-radius: 3px ; margin: 10px;">Booking</a>--> 
       <a href="services.html"style="border-radius:3px ; margin: 10px;">services</a>
       <a href="rates.html" style="border-radius: 3px ; margin: 10px;">Booking</a>
       <a href="contact.html" style="border-radius:3px ; margin: 10px;">About Us</a>
-     </nav>
-
+    </div> 
+	</nav>
+	
 		<h1>From Here You Can Book Your Appointment</h1>
 		<div class="container2">
 
@@ -28,6 +31,7 @@
             <h2>Services That we Provides Inside our Parlour.</h2>
             <ul>
             	<form id="checkboxForm">
+				
         		<div>
             		<li><input type="checkbox" id="item1" name="items" value="Threading">
             		<label for="item1">Threading</label></li>
@@ -41,21 +45,25 @@
             		<label for="item3">Manicure And Pedicure</label></li>
         		</div>
         		<div>
-            		<li><input type="checkbox" id="item1" name="items" value="Wax">
-            		<label for="item1">Wax</label></li>
+            		<li><input type="checkbox" id="item4" name="items" value="Wax">
+            		<label for="item4">Wax</label></li>
         		</div>
         		<div>
-            		<li><input type="checkbox" id="item1" name="items" value="hair Spa">
-            		<label for="item1">Hair spa</label></li>
+            		<li><input type="checkbox" id="item5" name="items" value="hair Spa">
+            		<label for="item5">Hair spa</label></li>
         		</div>
         		<div>
-            		<li><input type="checkbox" id="item1" name="items" value="Clean Up">
-            		<label for="item1">Clean Up</label></li>
+            		<li><input type="checkbox" id="item6" name="items" value="Clean Up">
+            		<label for="item6">Clean Up</label></li>
         		</div>
         		<div>
-            		<li><input type="checkbox" id="item1" name="items" value="bleach">
-            		<label for="item1">Bleach</label></li>
+            		<li><input type="checkbox" id="item7" name="items" value="bleach">
+            		<label for="item7">Bleach</label></li>
         		</div>
+				<div>
+					<li><input type="checkbox" id="item8" name="items" value="nail-art">
+					<label for="item8">Nail-Art</label></li>
+				</div>
         	<button type="submit">Submit</button>
     </form>
 </ul>
@@ -117,6 +125,13 @@
                 window.location.href ="booking.html";
             }, 100);
         });
+
+
+		
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    
     </script>
 </body>
 </html>

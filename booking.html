@@ -49,7 +49,7 @@
         console.log("Form data with selected items:", bookingData);
 
 
-        fetch('http://localhost:3000/book-appointment', {
+        fetch('', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -76,7 +76,7 @@
             alert(message);
 
             setTimeout(function(){
-            window.location.href = "startpage.html";
+            window.location.href = "index.html";
         },1000);
         })
         .catch(error =>{
@@ -97,12 +97,15 @@
 <body>
 
 <nav class="navbar">
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    <div class="nav-links">
       <a href="index.html" style=" border-radius: 3px; margin: 10px;">Home</a>
       <!--<a href="#offer.html" style="border-radius : 3px ;  margin: 10px;">Offer</a>-->
       <!--<a href="booking.html" style="border-radius: 3px ; margin: 10px;">Booking</a>-->
       <a href="services.html"style="border-radius:3px ; margin: 10px;">services</a>
       <a href="rates.html" style="border-radius: 3px ; margin: 10px;">Booking</a>
       <a href="contact.html" style="border-radius:3px ; margin: 10px;">About Us</a>
+      </div>
      </nav>
 
 
@@ -165,5 +168,11 @@
         document.getElementById('booking-form').addEventListener('submit', showPopup);
     </script>
 -->
+
+<script>
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+</script>
 </body>
 </html>

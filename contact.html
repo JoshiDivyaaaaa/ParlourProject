@@ -10,13 +10,16 @@
 <body>
 	
   <nav class="navbar">
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    <div class="nav-links">
       <a href="index.html" style=" border-radius: 3px; margin: 10px;">Home</a>
       <!--<a href="#offer.html" style="border-radius : 3px ;  margin: 10px;">Offer</a>-->
       <!--<a href="booking.html" style="border-radius: 3px ; margin: 10px;">Booking</a>-->
       <a href="services.html"style="border-radius:3px ; margin: 10px;">services</a>
       <a href="rates.html" style="border-radius: 3px ; margin: 10px;">Booking</a>
       <a href="contact.html" style="border-radius:3px ; margin: 10px;">About Us</a>
-     </nav>
+    </div> 
+    </nav>
 
 
 
@@ -29,7 +32,7 @@
 <div class="about-section">
   <h1>About Us !!!</h1>
   <p>“Beauty is the illumination of the soul.” </p>
-  <p>we are always for the all beautiful ladies for making them more beautiful. Basically every women is beutiful and we respect all womens. we want to appriciate that beautiful ladies who are busy in their professional life. They are spending a lot time to their family. they are Trying to make beautiful others life and while doing all this things she forgets to give attention to herself so we are trying make her beautiful and thinking that she sholud give attention to herself so we are always available for the beautiful womens.</p>
+  <p>we are always their for all Beautiful ladies. We want to make them more Beautiful. Basically every women is Gorgeous and we respect all womens. we want to appriciate that ladies who are busy in their professional or personal life. They are spending a lot time for family, friends. They are Trying to make beautiful others life and while doing all this she forgets to give attention to herself so we are trying make her beautiful.We thinks that she should give attention to herself that's why we are always welcome to all Beautiful womens.</p>
 </div>
 
 <h2 style="text-align:center">Our Team</h2>
@@ -41,7 +44,7 @@
         <h2>Divya Joshi</h2>
         <p class="title">Make-up Artist</p>
         <p>“Beauty, to me, is about being comfortable in your own skin. That, or a kick-ass red lipstick.”</p>
-        <p><a href="mailto:joshidivya557@gmail.com" class="linking">joshidivya557@gmail.com</p>
+        <p><a href="mailto:joshidivya557@gmail.com" class="linking">divya@gmail.com</p>
         <p><a href="tel:7499754752"><button class="button">Contact</button></p></a>
       </div>
     </div>
@@ -51,10 +54,10 @@
     <div class="card">
       <!--<img src="/w3images/team2.jpg" alt="Mike" style="width:100%">-->
       <div class="container">
-        <h2>Bhagyashree Bhatlavande</h2>
+        <h2>Akanksha Joshi</h2>
         <p class="title">Designer</p>
         <p>"Good Design is a good business,Every Great Design begins with an even better story."</p>
-        <p><a href="mailto:joshidivya557@gmail.com" class="linking">bhatlavande@gmail.com</p></a>
+        <p><a href="mailto:joshidivya557@gmail.com" class="linking">akanksha@gmail.com</p></a>
         <p><a href="tel:7499754752"><button class="button">Contact</button></p></a>
       </div>
     </div>
@@ -64,11 +67,11 @@
     <div class="card">
       <!--<img src="/w3images/team3.jpg" alt="John" style="width:100%">-->
       <div class="container">
-        <h2>Pradnya Gadekar</h2>
+        <h2>Shrushti Joshi</h2>
         <p class="title">Manager</p>
         <p>“Management is doing things right; leadership is doing the right things.”</p>
-        <p><a href="mailto:joshidivya557@gmail.com" class="linking">gadekar@gmail.com</p></a>
-        <p><a href="tel:7499754752"><button class="button">Call</button></p></a>
+        <p><a href="mailto:joshidivya557@gmail.com" class="linking">shrushti@gmail.com</p></a>
+        <p><a href="tel:7499754752"><button class="button">Contact</button></p></a>
       </div>
     </div>
   </div>
@@ -85,5 +88,10 @@
         </div>
 </div>
 
+<script>
+  function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+  }
+</script>
 </body>
 </html>

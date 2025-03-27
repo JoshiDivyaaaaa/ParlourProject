@@ -12,13 +12,14 @@
 
 
 		  <nav class="navbar">
-      <a href="index.html" style=" border-radius: 3px; margin: 10px;">Home</a>
-      <!--<a href="#offer.html" style="border-radius : 3px ;  margin: 10px;">Offer</a>-->
-      <!--<a href="booking.html" style="border-radius: 3px ; margin: 10px;">Booking</a>-->
-      <a href="services.html"style="border-radius:3px ; margin: 10px;">services</a>
-      <a href="booking.html" style="border-radius: 3px ; margin: 10px;">Booking</a>
-      <a href="contact.html" style="border-radius:3px ; margin: 10px;">About Us</a>
-     </nav>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+            <div class="nav-links">
+                    <a href="index.html" style=" border-radius: 3px; margin: 10px;">Home</a>
+                    <a href="services.html"style="border-radius:3px ; margin: 10px;">services</a>
+                    <a href="booking.html" style="border-radius: 3px ; margin: 10px;">Booking</a>
+                    <a href="contact.html" style="border-radius:3px ; margin: 10px;">About Us</a>
+            </div>
+        </nav>
 
 
 
@@ -49,6 +50,11 @@
         </div>
     </div>
 
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
 
 </body>
 </html>

@@ -1,5 +1,6 @@
 body{
 	background: linear-gradient(to right,lightpink,rebeccapurple,deeppink);
+    overflow-x: hidden;
 }
 .cleanimg{
 	display: grid;
@@ -40,6 +41,7 @@ a:active{
     .cleanimg {
         grid-template-columns: 1fr; /* Stacks the grid items into a single column */
         column-gap: 10px; /* Adds space between grid items */
+        align-items: center;
     }
 
     .cleantext {
@@ -54,6 +56,7 @@ a:active{
 @media (max-width: 480px) {
     .cleantext {
         font-size: 18px; /* Further reduces the font size for mobile screens */
+        align-items: center;
     }
 
     h3 {
